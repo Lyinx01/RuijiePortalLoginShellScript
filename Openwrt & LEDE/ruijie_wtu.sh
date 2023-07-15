@@ -10,10 +10,10 @@ fi
 
 #If received parameters is less than 3, print usage
 if [ "${#}" -lt "3" ]; then
-  echo "Usage: ./ruijie_jmu.sh service username password"
+  echo "Usage: ./ruijie_wtu.sh service username password"
   echo "Service parameter can be \"chinamobile\", \"chinanet\" and \"chinaunicom\". If service parameter do not set as these value, it will use campus network as default internet service provider."
   echo "Example: ./ruijie_jmu.sh chinanet 201620000000 123456"
-  echo "if you want to logout, use: ./ruijie_jmu.sh logout"
+  echo "if you want to logout, use: ./ruijie_wtu.sh logout"
   exit 1
 fi
 
