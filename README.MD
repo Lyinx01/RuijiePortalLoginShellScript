@@ -48,4 +48,5 @@
 
 wtu这边基本没放什么正常端口，所以弄代理不是很有效，wtu版本的脚本把username,password,service都设成了静态变量，并且添加了周期性的联网认证，避免wtu半夜会断开连接，方便自动认证，便于在路由器端使用
 为了保证正常使用，请通过iptable把ttl改为64
+
 iptables -t mangle -A PREROUTING -j TTL --ttl-set 64
