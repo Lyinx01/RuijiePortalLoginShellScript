@@ -1,7 +1,7 @@
 #!/bin/sh
 while : ;do
-#Exit the script when is already online, use www.google.cn/generate_204 to check the online status
-captiveReturnCode=`curl -s -I -m 10 -o /dev/null -s -w %{http_code} http://www.google.cn/generate_204`
+#Exit the script when is already online, use wifi.vivo.com.cn/generate_204 to check the online status
+captiveReturnCode=`curl -s -I -m 10 -o /dev/null -s -w %{http_code} http://wifi.vivo.com.cn/generate_204`
 if [ "${captiveReturnCode}" = "204" ]; then
  echo "You are already online!"
   sleep 20
