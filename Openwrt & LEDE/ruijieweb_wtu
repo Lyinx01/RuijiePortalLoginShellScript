@@ -8,7 +8,6 @@ while : ;do
 #Exit the script when is already online, use wifi.vivo.com.cn/generate_204 to check the online status
 captiveReturnCode=`curl -s -I -m 10 -o /dev/null -s -w %{http_code} http://wifi.vivo.com.cn/generate_204`
 if [ "${captiveReturnCode}" = "204" ]; then
- echo "You are already online!"
   sleep 20
 else
 
@@ -17,14 +16,14 @@ else
 #Get Ruijie login page URL
  loginPageURL=`curl -s "http://www.google.cn/generate_204" | awk -F \' '{print $2}'`
 
- username=""
- password=""
+ username="2305210110"
+ password="Wjw041210."
 
  chinamobile="YD"
  chinanet="DX"
  chinaunicom="LT"
  campus="XYW"
- service=""
+ service="chinanet"
 
 
  if [ ${service} = "chinamobile" ]; then
